@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskita 💖</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2;
+            padding: 20px;
+        }
+        h1 {
+            color: #d63384;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        img {
+            width: 200px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Feliz San Valentín, michona 💕</h1>
+    <p>Hice esto para vos con todo mi corazoncito. Clicka en las flores jeje 🌸</p>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ramo_de_rosas_rojas.jpg/800px-Ramo_de_rosas_rojas.jpg" alt="Ramo de flores" onclick="playMusic()">
+    </div>
+    <audio id="song" src="https://www.mfiles.co.uk/mp3-downloads/juan-luis-guerra-mi-bendicion.mp3"></audio>
+    <script>
+        function playMusic() {
+            document.getElementById('song').play();
+        }
+    </script>
+</body>
+</html>
